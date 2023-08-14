@@ -1,0 +1,391 @@
+@font-face {
+    font-family: 'general_sansregular';
+    src: url('generalsans-regular-webfont.woff2') format('woff2'),
+         url('generalsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    border: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'General Sans';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#minicircle{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    width: 100%;
+    background-color: black;
+    
+}
+
+#page1{
+    background-color: black;
+    height: 90vh;
+    width: 100%;
+    color: white;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    padding: 25px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    margin-top: 0px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+#div1{
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+#div1 h1{
+    line-height: .9;
+    letter-spacing: 10px;
+    opacity: 0.6;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-weight: 900 ;
+}
+
+.textbox{
+    text-align: right;
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.textbox h5{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.textbox h1{
+    margin-left: 165px;
+    letter-spacing: 10px;
+    
+}
+
+#div2{
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 6.2vw;
+    padding-right: 50px;
+    font-size: 1.3vw;
+    font-weight: 100;
+    line-height: 2vw;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+#page1footer{
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+
+}
+
+#page1footer a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.iconset{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#page1footer .circle{
+    height: 30px;
+    width: 30px;
+    background-color: #888;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.circle i{
+    font-size: 23px;
+}
+
+
+#page2{
+    width: 100%;
+    height: 100vh;
+    padding-top: 200px;
+    padding-right: 8vw;
+    /* padding-left: 2vw; */
+    color: white;
+
+}
+
+.elem{
+    border-top: 1px solid rgb(185, 185, 185);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 3vw 0vw;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.elem:hover h2{
+    opacity: .2;
+    padding-left: 80px;
+}
+.elem:hover h5{
+    opacity: .2;
+    /* padding-left: 80px; */
+}
+
+
+.elem h2{
+    font-size: 7vw;
+    padding-left: 2.8vw;
+    opacity: .7;
+    transition: all ease 0.5s;
+}
+
+.elem h5{
+    opacity: .7;
+    padding-left: 2.8vw
+}
+
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    isolation: isolate;
+}
+
+.last{
+    border-bottom: 1px solid rgb(185, 185, 185);
+}
+
+#page3{
+    margin-top: 250px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    padding: 10vw 10vw;
+    color: white;
+    padding-left: 40vw;
+    gap: 50px;
+    /* border-bottom: 1px solid white; */
+}
+
+#page3 img{
+    width: 200px;
+}
+
+#textbox{
+    width: 25rem;
+    line-height: 1.5;
+}
+
+#textbox h5{
+    opacity: .7;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#textbox p{
+    margin-bottom: 20px;
+}
+
+#textbox button{
+    border: 1px solid white ;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 12px 22px;
+    font-weight: 100;
+    transition: all ease 0.5s;
+}
+
+#textbox button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#page4{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 53vh;
+    text-transform: uppercase;
+}
+
+#sus h4{
+    opacity: .7;
+}
+#sus h5{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#sus{
+    padding: 20px 30px;
+    padding-bottom: 10vw;
+}
+
+#footer{
+    padding: 40px 30px ;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    gap: 25px;
+}
+
+.right a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/* hello from here all are experimental */
+
+#sus h5{
+   display: inline-block;
+   position: relative;
+   color: white;
+}
+ 
+#sus h5:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: white;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+ 
+#sus h5:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}   
+
+.right a{
+   display: inline-block;
+   position: relative;
+   color: white;
+}
+ 
+.right a:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: white;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+ 
+.right a:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+#page1footer a{
+   display: inline-block;
+   position: relative;
+   color: white;
+}
+ 
+#page1footer a:after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: white;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+ 
+#page1footer a:hover:after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
